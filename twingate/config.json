@@ -1,0 +1,17 @@
+{
+    "name": "Twingate Add-on",
+    "version": "1.0",
+    "slug": "twingate",
+    "description": "Run the Twingate client using the Docker command provided by Twingate.",
+    "arch": ["armv7", "aarch64", "amd64"],
+    "startup": "application",
+    "boot": "auto",
+    "options": {
+      "docker_command": ""
+    },
+    "schema": {
+      "docker_command": "str"
+    },
+    "image": "local/twingate-addon:latest"
+  }
+  
